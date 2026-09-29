@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" role="img" aria-label="Laundrowash">
+  <defs>
+    <clipPath id="lw-porthole"><circle cx="24" cy="26.5" r="10.5"/></clipPath>
+  </defs>
+  <rect width="48" height="48" rx="14" fill="#0f1e3d"/>
+  <circle cx="10.5" cy="9.5" r="2" fill="#ffd23f"/>
+  <rect x="15" y="8.2" width="10" height="2.6" rx="1.3" fill="#ffffff" opacity=".35"/>
+  <circle cx="24" cy="26.5" r="13.5" fill="#ffffff"/>
+  <circle cx="24" cy="26.5" r="10.5" fill="#c9e1ff"/>
+  <g clip-path="url(#lw-porthole)">
+    <path d="M12 26.5c2.4-2 4.8-2 7.2 0s4.8 2 7.2 0 4.8-2 7.2 0 4.8 2 7.2 0V40H12z" fill="#3b6fd8"/>
+    <path d="M12 30.5c2.4-2 4.8-2 7.2 0s4.8 2 7.2 0 4.8-2 7.2 0 4.8 2 7.2 0V40H12z" fill="#1f3a6e" opacity=".55"/>
+  </g>
+  <circle cx="28.6" cy="21.2" r="2.4" fill="#ffd23f"/>
+  <circle cx="20.6" cy="20.6" r="1.3" fill="#ffffff"/>
+</svg>

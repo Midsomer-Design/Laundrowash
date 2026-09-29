@@ -1,0 +1,51 @@
+# Laundrowash — Apache config (SiteGround and most cPanel hosts)
+
+ErrorDocument 404 /404.html
+DirectoryIndex index.html
+Options -Indexes
+
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+
+  # Force HTTPS and www
+  RewriteCond %{HTTPS} off [OR]
+  RewriteCond %{HTTP_HOST} !^www\. [NC]
+  RewriteRule ^(.*)$ https://www.laundrowash.com.au/$1 [L,R=301]
+
+  # Old WordPress pages -> closest new page (keeps existing Google rankings)
+  RewriteRule ^(home-1|home-2|home-3|home2|home-onepage|sample-page|project-full-width)/?$ / [L,R=301]
+  RewriteRule ^(services|services-two|services-three|services-four)/?$ / [L,R=301]
+  RewriteRule ^team-(one|two|three|four|five)/?$ /about-us/ [L,R=301]
+  RewriteRule ^(shop|shop-grid|shop-2-column-grid|shop-3-column-grid|shop-4-column-grid|cart|checkout|my-account)/?$ /pricing/ [L,R=301]
+  RewriteRule ^(product|product-category|product-tag)/ /pricing/ [L,R=301]
+  RewriteRule ^(blog|tag|category|author)(/.*)?$ / [L,R=301]
+  RewriteRule ^about/?$ /about-us/ [L,R=301]
+  RewriteRule ^(wp-admin|wp-login\.php|xmlrpc\.php)(/.*)?$ - [F,L]
+</IfModule>
+
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/css application/javascript image/svg+xml application/json application/manifest+json text/xml application/xml
+</IfModule>
+
+<IfModule mod_mime.c>
+  AddType font/woff2 .woff2
+  AddType application/manifest+json .webmanifest
+</IfModule>
+
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresByType text/html "access plus 0 seconds"
+  ExpiresByType text/css "access plus 1 week"
+  ExpiresByType application/javascript "access plus 1 week"
+  ExpiresByType image/svg+xml "access plus 1 month"
+  ExpiresByType image/png "access plus 1 month"
+  ExpiresByType image/jpeg "access plus 1 month"
+  ExpiresByType image/webp "access plus 1 month"
+  ExpiresByType font/woff2 "access plus 1 year"
+</IfModule>
+
+<IfModule mod_headers.c>
+  Header always set X-Content-Type-Options "nosniff"
+  Header always set Referrer-Policy "strict-origin-when-cross-origin"
+  Header always set X-Frame-Options "SAMEORIGIN"
+</IfModule>
