@@ -9,7 +9,7 @@ It's a fast, mobile-first static site: plain HTML, CSS and a small amount of Jav
 | URL | Page |
 |-----|------|
 | `/` | Home |
-| `/domestic/` | Household laundry (wash & fold, ironing, doonas, mending, dry cleaning, self-service) |
+| `/domestic/` | Household laundry (wash & fold, ironing, doonas, mending, dry cleaning) |
 | `/commercial/` | Business laundry (salons, clinics, cafés, hospitality, schools, mechanics) |
 | `/industrial/` | Industrial workwear (mines, civil, diesel workshops) |
 | `/pricing/` | Price guide *(new)* |
@@ -61,8 +61,8 @@ Search and replace across all `.html` files: `(02) 4272 4433` / `+61242724433`, 
 ## To confirm with Keith before launch
 
 - [ ] **Opening hours.** Taken from directory listings (the old site didn't list them): Mon & Wed–Fri 8–5, **Tue 8–12**, Sat 8–2, Sun closed.
-- [ ] **Prices.** Ironing baskets from $30; hand ironing from $3.50/item (min. 10); doonas $15 / $20 / $25 / $30 plus $5 for an underlay. Also any prices to add for wash & fold, self-service and dry cleaning.
-- [ ] **Pickup & delivery.** The site says it's free for business/industrial customers, with home pickup by arrangement (conditions apply). Which suburbs are covered?
+- [ ] **Prices.** Ironing baskets from $30; hand ironing from $3.50/item (min. 10); doonas $15 / $20 / $25 / $30 plus $5 for an underlay. Also any prices to add for wash & fold and dry cleaning.
+- [ ] **Pickup & delivery.** The site says it's free for business/industrial customers. Which suburbs are covered?
 - [ ] **"25+ years" / "family-owned".** Carried over from the old site's wording.
 - [ ] **KeiraPC mention** on the About page. Keep or remove?
 - [ ] **Reviews.** The four reviews from the old site are used. Link the "Read our Google reviews" button to the Google Business Profile.
@@ -74,8 +74,8 @@ Search and replace across all `.html` files: `(02) 4272 4433` / `+61242724433`, 
 
 Built after reviewing high-performing laundry and dry-cleaning sites in Australia and overseas (The Laundry Lady, City Central Laundry, Hampr, Laundryheap, Oxwash, Mulberrys and the Awwwards-nominated Laundry Loft), plus current local-business conversion guidance. What we carried over:
 
-- **Clear value proposition and two primary actions** above the fold (Book a pickup / Call).
-- **Sticky thumb-zone action bar on mobile** (Call · Directions · Book a pickup).
+- **Clear value proposition and two primary actions** above the fold (Get in touch / Call).
+- **Sticky thumb-zone action bar on mobile** (Call · Directions · Get in touch).
 - **Live "Open now" status** and today's hours highlighted.
 - **Audience split** (Home / Business / Industrial) so each visitor finds their path in one tap.
 - **"How it works" in three steps**, **transparent pricing** and **reviews placed near decisions**.

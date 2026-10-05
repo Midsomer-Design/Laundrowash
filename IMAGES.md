@@ -1,6 +1,6 @@
 # Photo shot list
 
-The site has 17 photo placeholders. Each one is a light-blue box with a label describing the photo that should go there. They're all marked in the HTML like this:
+The site has 16 photo placeholders. Each one is a light-blue box with a label describing the photo that should go there. They're all marked in the HTML like this:
 
 ```html
 <div class="ph ph--square" role="img" aria-label="Photo placeholder: …">…</div>
@@ -40,7 +40,6 @@ Replace the whole `<div class="ph …">…</div>` with an image, keeping it insi
 |---|-------|------|
 | 7 | Fresh, neatly folded family laundry stacked in a basket on a bed | 1600×1200 (4:3) |
 | 8 | A family enjoying a weekend outdoors at the beach or park (stock is fine) | 1200×1200 (1:1) |
-| 9 | The row of washers and dryers inside the laundromat | 1200×1200 (1:1) |
 
 ### Business (`/commercial/`)
 
@@ -65,4 +64,4 @@ Replace the whole `<div class="ph …">…</div>` with an image, keeping it insi
 | 16 | Portrait of Keith Somerville in the shop | 1200×1600 (3:4) |
 | 17 | A customer walking in carrying a doona and a basket of washing | 1200×1200 (1:1) |
 
-**Tip:** shots 1, 5, 6, 9, 13, 15, 16 and 17 can all be captured in a single one-hour shoot at the shop.
+**Tip:** shots 1, 5, 6, 13, 15, 16 and 17 can all be captured in a single one-hour shoot at the shop.

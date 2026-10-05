@@ -223,7 +223,7 @@
       var to = form.getAttribute('data-mailto') || 'info@laundrowash.com.au';
       var labels = {
         customer_type: 'Customer type', name: 'Name', phone: 'Phone', email: 'Email',
-        suburb: 'Suburb', service: 'Service', pickup_day: 'Preferred pickup/drop-off day', message: 'Message'
+        suburb: 'Suburb', service: 'Service', pickup_day: 'Preferred day', message: 'Message'
       };
       var lines = [];
       data.forEach(function (value, key) {
